@@ -1,0 +1,153 @@
+:root {
+    max-width: 1500px;
+}
+body {
+    /* flex: content; */
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: right; */
+    /* padding: -10px; */
+    background-color: rgb(119, 124, 150);
+    /* flex-direction: column; */
+    /* max-height: 10px; */
+    /* border: 2px solid black; */
+    max-width: 1500px;
+    height: 20px;
+    width: 100vw;
+}
+
+a[href*='.css']::after {
+    content: '📝';
+    display: inline-block;
+    margin-left: 3px;
+}
+
+nav ul {
+    display: contents;
+    justify-content: left;
+    min-width: 300px;
+    
+    
+}
+  
+nav a {
+    background-color: unset;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 10px 10px 0px 0px;
+}
+
+nav a:hover {
+    color: var(--light);
+}
+
+h1 {
+
+}
+
+h2 {
+
+}
+
+h3 {
+    Font-size: 24pt;
+}
+
+.head-img {
+    display: flex;
+    flex-wrap: stretch;
+    /* width: 100%; */
+    /* height: 300px; */
+}
+
+#pageflexbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    max-width: 1500px;
+    /* border: 2px solid blue; */
+}
+
+.leftcolumn {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10px;
+    border-right: 3px solid black;
+    width: 175px;
+}
+
+.leftcolumnflexbox {
+    flex-wrap: wrap;
+    border: 2px 2px 0px 0px solid rgb(5, 5, 5);
+    /* border-right: 3px solid black; */
+    color: black;
+    background-color: rgb(255, 255, 255);
+    height: 500px;
+    /* padding: 0px 10px 10px 10px; */
+    width: 100%;
+    text-align: right;
+    padding-right: 10px;
+}
+
+.leftcolumnflexbox h1 {
+    font-size: 27pt;
+}
+
+.leftcolumnflexbox h2 {
+    font-size: 27pt;
+    margin-top: 150px;
+}
+
+.leftcolumnflexbox h3 {
+    font-size: 27pt;
+    margin-top: 400px;
+    /* padding: 100px; */
+}
+
+.rightcolumn {
+    flex: display;
+    padding: 10px;
+    /* border: 2px solid black; */
+    width: 1000px;
+    /* border: 3px solid rgb(248, 19, 19); */
+}
+
+.rightcolumnflexbox {
+    margin-bottom: 3%;
+}
+
+.rightworkcontent:hover {
+    width: 100%;
+    /* border-top: 2px solid black; */
+}
+
+#rightworkcontent2:hover {
+    flex-direction: row;
+    width: 49%;
+    /* border-bottom: 4px solid black; */
+}
+
+@media screen and (max-width: 768px) {
+    /* Use flex-direction to stack the navbar, sidebar, and body */
+    main,
+    nav {
+      flex-direction: column;
+    }
+    /* Make the sidebar stack below the body */
+    section {
+      order: 2;
+    }
+    /* Change the header background */
+    header {
+      background: #772014;
+    }
+    /* Change the navbar and footer background */
+    nav,
+    footer {
+      background-color: #bb8588;
+    }
+  }
