@@ -1,59 +1,934 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <link rel="icon" 
-    type="image/png" 
-    href="./Assets/img/favicon-32x32.png">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./Assets/css/style.css"/>
-    <title>Joshua Christianson Portfolio</title>   
-</head>
-    <body>
-        <header>
-            <nav>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Joshua Portfolio</title>
+    <!-- Bulma Version 0.9.0-->
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.9.0/css/bulma.min.css" />
+    <link rel="stylesheet" type="text/css" href="./Assets/css/showcase.css" />
+    <link rel="stylesheet" type="text/css" href="./Assets/css/personal.css">
+    <script
+      src="https://kit.fontawesome.com/2828f7885a.js"
+      integrity="sha384-WAsFbnLEQcpCk8lM1UTWesAf5rGTCvb2Y+8LvyjAAcxK1c3s5c0L+SYOgxvc6PWG"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="icon" type="image/png" href="favicon.png" />
+  </head>
+
+  <body>
+    <!-- Begin Preloader -->
+    <div class="preloader-wrapper">
+      <div class="preloader">
+        <img src="./Assets/images/loading-gif.gif" alt="" />
+      </div>
+    </div>
+    <!-- End Preloader-->
+    <!-- Begin Scroll Up Button -->
+
+    <form action="#home">
+      <button id="toTop" title="Go to top">
+        <i class="fas fa-angle-up"></i>
+      </button>
+    </form>
+    <!-- End Scroll Up Button -->
+
+    <!-- Begin Header -->
+    <div class="header-wrapper" id="home">
+      <!-- Begin Hero -->
+      <section class="hero is-large">
+        <!-- Begin Mobile Nav -->
+        <nav class="navbar is-transparent is-hidden-desktop">
+          <!-- Begin Burger Menu -->
+          <div class="navbar-brand">
+            <div class="navbar-burger burger" data-target="mobile-nav">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <!-- End Burger Menu -->
+          <div id="mobile-nav" class="navbar-menu">
+            <div class="navbar-end">
+              <div class="navbar-item">
+                <a class="navbar-item" href="#home">
+                  Home
+                </a>
+              </div>
+              <div class="navbar-item">
+                <a class="navbar-item" href="#about-me">
+                  About Me
+                </a>
+              </div>
+              <div class="navbar-item">
+                <a class="navbar-item" href="#services">
+                  Services
+                </a>
+              </div>
+              <div class="navbar-item">
+                <a class="navbar-item" href="#skills">
+                  Skills
+                </a>
+              </div>
+              <div class="navbar-item">
+                <a class="navbar-item" href="#my-work">
+                  My Work
+                </a>
+              </div>
+              <div class="navbar-item">
+                <a class="navbar-item" href="#contact">
+                  Contact
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- End Mobile Nav -->
+        <!-- Begin Hero Content-->
+        <div class="hero-body">
+          <div class="container has-text-centered">
+            <h1 class="subtitle">Hey there, I'm</h1>
+            <h2 class="title">Joshua</h2>
+            <h1 class="subtitle profession">A Full Stack Developer</h1>
+          </div>
+        </div>
+        <!-- End Hero Content-->
+        <!-- Begin Hero Menu -->
+        <div class="hero-foot ">
+          <div class="hero-foot--wrapper">
+            <div class="columns">
+              <div class="column is-12 hero-menu-desktop has-text-centered">
                 <ul>
-                <a href="#pageflexbox">Home</a>
-                <a href="#pageflexbox">About Me</a>
-                <a href="#rightworkcontent2">Work</a>
-                <a href="#contact">Contact</a>
+                  <li class="is-active">
+                    <a href="#home">Home</a>
+                  </li>
+                  <li>
+                    <a href="#about-me">About Me</a>
+                  </li>
+                  <li>
+                    <a href="#services">Services</a>
+                  </li>
+                  <li>
+                    <a href="#skills">Skills</a>
+                  </li>
+                  <li>
+                    <a href="#my-work">My Work</a>
+                  </li>
+                  <li>
+                    <a href="#contact">Contact</a>
+                  </li>
                 </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Hero Menu -->
+      </section>
+      <!-- End Hero -->
+    </div>
+    <!-- End Header -->
+
+    <!-- Begin Main Content -->
+    <div class="main-content">
+      <!-- Begin About Me Section -->
+      <div class="section-light about-me" id="about-me">
+        <div class="container">
+          <div class="column is-12 about-me">
+            <h1 class="title has-text-centered section-title">About Me</h1>
+          </div>
+          <div class="columns is-multiline">
+            <div
+              class="column is-6 has-vertically-aligned-content"
+              data-aos="fade-right"
+            >
+              <p class="is-larger">
+                &emsp;&emsp;<strong
+                  >My name is Joshua and I am a full stack developer</strong
+                >
+              </p>
+              <br />
+              <p>
+                As of may 2022, I am currently attending Northwestern University.  I am learning full stack development including, html, CSS, JavaScript, SQL and more.  I will be completeing school in June and will be a certified full stack developer.
+              </p>
+              <br />
+              <div class="is-divider"></div>
+              <div class="columns about-links">
+                <div class="column">
+                  <!-- <p class="heading">
+                    <strong>Give me a ring</strong>
+                  </p>
+                  <p class="subheading">
+                    123-456-7890
+                  </p>
+                </div>
+                <div class="column">
+                  <p class="heading">
+                    <strong>Email Me</strong>
+                  </p>
+                  <p class="subheading">
+                    hello@example.com
+                  </p> -->
+                </div>
+                <div class="column">
+                  <!-- <p class="heading">
+                    <strong>View my portfolio</strong>
+                  </p>
+                  <p class="subheading">
+                    example.com
+                  </p> -->
+                </div>
+              </div>
+            </div>
+            <div class="column is-6 right-image " data-aos="fade-left">
+              <img
+                class="is-rounded"
+                src="https://picsum.photos/id/366/600/375"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End About Me Content -->
+      <div class="section-dark resume">
+        <div class="container">
+          <div
+            class="columns is-multiline"
+            data-aos="fade-in"
+            data-aos-easing="linear"
+          >
+            <div class="column is-12 about-me">
+              <h1 class="title has-text-centered section-title">
+                View My Resume
+              </h1>
+            </div>
+            <div class="column is-10 has-text-centered is-offset-1">
+              <!-- <h2 class="subtitle">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et doloremagna aliqua
+              </h2> -->
+              <form action="example.docs">
+                <button class="button">
+                  Download Resume&emsp;<i class="fad fa-download fa-lg"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Begin Services Content -->
+      <div class="section-color services" id="services">
+        <div class="container">
+          <div class="columns is-multiline">
+            <div
+              class="column is-12 about-me"
+              data-aos="fade-in"
+              data-aos-easing="linear"
+            >
+              <h1 class="title has-text-centered section-title">Services</h1>
+
+              <h2 class="subtitle has-text-centered">
+                I am currently not offering any services but will soon and this list will be populated then.  For now, lorem will surfice. 
+              </h2>
+              <br />
+            </div>
+            <div class="columns is-12">
+              <div
+                class="column is-4 has-text-centered"
+                data-aos="fade-in"
+                data-aos-easing="linear"
+              >
+                <i class="fad fa-meteor fa-3x"></i>
+                <hr />
+                <h2>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                </h2>
+              </div>
+              <div
+                class="column is-4 has-text-centered"
+                data-aos="fade-in"
+                data-aos-easing="linear"
+              >
+                <i class="fas fa-paint-brush fa-3x"></i>
+                <hr />
+                <h2>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                </h2>
+              </div>
+              <div
+                class="column is-4 has-text-centered"
+                data-aos="fade-in"
+                data-aos-easing="linear"
+              >
+                <i class="fas fa-rocket fa-3x"></i>
+                <hr />
+                <h2>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                </h2>
+              </div>
+            </div>
+            <hr />
+            <div class="columns is-12">
+              <div
+                class="column is-4 has-text-centered"
+                data-aos="fade-in"
+                data-aos-easing="linear"
+              >
+                <i class="fas fa-upload fa-3x"></i>
+                <hr />
+                <h2>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                </h2>
+              </div>
+              <div
+                class="column is-4 has-text-centered"
+                data-aos="fade-in"
+                data-aos-easing="linear"
+              >
+                <i class="fas fa-bus fa-3x"></i>
+                <hr />
+                <h2>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                </h2>
+              </div>
+              <div
+                class="column is-4 has-text-centered"
+                data-aos="fade-in"
+                data-aos-easing="linear"
+              >
+                <i class="fas fa-code fa-3x"></i>
+                <hr />
+                <h2>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua
+                </h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Services Content -->
+      <!-- Begin Skills Content -->
+      <div class="section-light skills" id="skills">
+        <div class="container">
+          <div class="columns is-multiline">
+            <div class="column is-12 about-me">
+              <h1 class="title has-text-centered section-title">Skills</h1>
+            </div>
+            <div
+              class="column is-6"
+              data-aos="fade-in"
+              data-aos-easing="linear"
+            >
+              <h1>Adobe Experience Design</h1>
+              <progress class="progress" value="70" max="100">30%</progress>
+              <h1>Adobe After Effects</h1>
+              <progress class="progress" value="65" max="100">30%</progress>
+              <h1>Visual Studio Code</h1>
+              <progress class="progress" value="58" max="100">45%</progress>
+              <h1>Sketch</h1>
+              <progress class="progress" value="10" max="100">60%</progress>
+            </div>
+            <div
+              class="column is-6"
+              data-aos="fade-in"
+              data-aos-easing="linear"
+            >
+              <h1>HTML</h1>
+              <progress class="progress" value="70" max="100">30%</progress>
+              <h1>CSS</h1>
+              <progress class="progress" value="70" max="100">30%</progress>
+              <h1>VueJS</h1>
+              <progress class="progress" value="10" max="100">45%</progress>
+              <h1>React</h1>
+              <progress class="progress" value="10" max="100">60%</progress>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Skills Content -->
+      <!-- Begin Work Content -->
+      <div class="section-dark my-work" id="my-work">
+        <div class="container">
+            <div class="container portfolio-container">
+                <div class="columns">
+                  <div class="column is-4">
+                    <!-- Tech Blog -->
+                    <div class="card">
+                      <header class="card-header">
+                        <p class="card-header-title">
+                          <span>Tech Blog <small></small></span>
+                          <span class="is-pulled-right">
+                            <a href="https://github.com/jgthms/bulma/releases/tag/0.7.2">
+                              <span class="tag is-default">v1.0</span>
+                            </a>
+                            <span class="tag is-default">Desktop</span>
+                            <span class="tag is-default">Mobile</span>
+                          </span>
+                        </p>
+                      </header>
+                      <div class="card-content">
+                        <figure class="image">
+                          <img src="./Assets/img/ss_techblog.png" alt="Tech Blog screenshot">
+                        </figure>
+                      </div>
+                      <footer class="card-footer">
+                        <a href="https://peaceful-dawn-10531.herokuapp.com/" class="card-footer-item">Preview</a>
+                        <a href="https://github.com/IIMacGyverII/Tech_Blog" class="card-footer-item">Source
+                          Code</a>
+                      </footer>
+                    </div>
+                    <!-- Simple Weather API -->
+                    <div class="card">
+                      <header class="card-header">
+                        <p class="card-header-title">
+                          <span>Simple Weather API</span>
+                          <span class="is-pulled-right">
+                            <a href="https://github.com/IIMacGyverII/weatherApihomework">
+                              <span class="tag is-default">v1.0</span>
+                            </a>
+                            <span class="tag is-default">Desktop</span>
+                            <span class="tag is-default">Mobile</span>
+                          </span>
+                        </p>
+                      </header>
+                      <div class="card-content">
+                        <figure class="image">
+                          <img src="./Assets/img/ss_weatherapi.png" alt="Cards template screenshot">
+                        </figure>
+                      </div>
+                      <footer class="card-footer">
+                        <a href="https://iimacgyverii.github.io/weatherApihomework/" class="card-footer-item">Preview</a>
+                        <a href="https://github.com/IIMacGyverII/weatherApihomework" class="card-footer-item">Source
+                          Code</a>
+                      </footer>
+                    </div>
+                    <!-- forum -->
+                    <!-- <div class="card">
+                      <header class="card-header">
+                        <p class="card-header-title">
+                          <span>Forum</span>
+                          <span class="is-pulled-right">
+                            <a href="https://github.com/jgthms/bulma/releases/tag/0.7.2">
+                              <span class="tag is-default">v0.7.2</span>
+                            </a>
+                            <span class="tag is-default">Desktop</span>
+                            <span class="tag is-default">Mobile</span>
+                          </span>
+                        </p>
+                      </header>
+                      <div class="card-content">
+                        <figure class="image">
+                          <img src="./Assets/images/forum.png" alt="Hero template screenshot">
+                        </figure>
+                      </div>
+                      <footer class="card-footer">
+                        <a href="templates/forum.html" class="card-footer-item">Preview</a>
+                        <a href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/forum.html" class="card-footer-item">Source
+                          Code</a>
+                      </footer>
+                    </div> -->
+                    <!-- insta album -->
+                    <!-- <div class="card">
+                      <header class="card-header">
+                        <p class="card-header-title">
+                          <span>InstaAlbum</span>
+                          <span class="is-pulled-right">
+                            <a href="https://github.com/jgthms/bulma/releases/tag/0.7.2">
+                              <span class="tag is-default">v0.7.2</span>
+                            </a>
+                            <span class="tag is-default">Desktop</span>
+                            <span class="tag is-default">Mobile</span>
+                          </span>
+                        </p>
+                      </header>
+                      <div class="card-content">
+                        <figure class="image">
+                          <img src="./Assets/images/instaalbum.png" alt="Landing template screenshot">
+                        </figure>
+                      </div>
+                      <footer class="card-footer">
+                        <a href="templates/instaAlbum.html" class="card-footer-item">Preview</a>
+                        <a href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/instaAlbum.html" class="card-footer-item">Source
+                          Code</a>
+                      </footer>
+                    </div> -->
+                    <!-- landing -->
+                    <!-- <div class="card">
+                      <header class="card-header">
+                        <p class="card-header-title">
+                          <span>Landing</span>
+                          <span class="is-pulled-right">
+                            <a href="https://github.com/jgthms/bulma/releases/tag/0.7.2">
+                              <span class="tag is-default">v0.7.2</span>
+                            </a>
+                            <span class="tag is-default">Desktop</span>
+                            <span class="tag is-default">Mobile</span>
+                          </span>
+                        </p>
+                      </header>
+                      <div class="card-content">
+                        <figure class="image">
+                          <img src="./Assets/images/landing.png" alt="Landing template screenshot">
+                        </figure>
+                      </div>
+                      <footer class="card-footer">
+                        <a href="templates/landing.html" class="card-footer-item">Preview</a>
+                        <a href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/landing.html" class="card-footer-item">Source
+                          Code</a>
+                      </footer>
+                    </div> -->
+        
+                  </div>
+                  <div class="column is-4">
+                    <!-- The Recipe for Success -->
+                    <div class="card">
+                      <header class="card-header">
+                        <p class="card-header-title">
+                          <span>The Recipe for Success</span>
+                          <span class="is-pulled-right">
+                            <a href="https://github.com/IIMacGyverII/therecipeforsuccess">
+                              <span class="tag is-default">v1.0</span>
+                            </a>
+                            <span class="tag is-default">Desktop</span>
+                            <span class="tag is-default">Mobile</span>
+                          </span>
+                        </p>
+                      </header>
+                      <div class="card-content">
+                        <figure class="image">
+                          <img src="./Assets/img/ss_therecipeforsuccess.png" alt="The Recipe for Success">
+                        </figure>
+                      </div>
+                      <footer class="card-footer">
+                        <a href="https://therecipeforsuccess.herokuapp.com/" class="card-footer-item">Preview</a>
+                        <a href="https://github.com/IIMacGyverII/therecipeforsuccess" class="card-footer-item">Source
+                          Code</a>
+                      </footer>
+                    </div>
+                    <!-- Employee Tracker -->
+                    <div class="card">
+                      <header class="card-header">
+                        <p class="card-header-title">
+                          <span>Employee Tracker</span>
+                          <span class="is-pulled-right">
+                            <a href="https://github.com/IIMacGyverII/EmployeeTracker">
+                              <span class="tag is-default">v1.0</span>
+                            </a>
+                            <span class="tag is-default">Desktop</span>
+                            <span class="tag is-default">Node.js</span>
+                            <span class="tag is-default">Inquirer</span>
+                          </span>
+                        </p>
+                      </header>
+                      <div class="card-content">
+                        <figure class="image">
+                          <img src="./Assets/img/ss_employeetracker.png" alt="Cheatsheet template screenshot">
+                        </figure>
+                      </div>
+                      <footer class="card-footer">
+                        <a href="https://www.youtube.com/watch?v=fh5s7yljpbw" class="card-footer-item">Preview</a>
+                        <a href="https://github.com/IIMacGyverII/EmployeeTracker" class="card-footer-item">Source
+                          Code</a>
+                      </footer>
+                    </div>
+                    <!-- hero -->
+                    <!-- <div class="card">
+                      <header class="card-header">
+                        <p class="card-header-title">
+                          <span>Hero</span>
+                          <span class="is-pulled-right">
+                            <a href="https://github.com/jgthms/bulma/releases/tag/0.7.2">
+                              <span class="tag is-default">v0.7.2</span>
+                            </a>
+                            <span class="tag is-default">Desktop</span>
+                            <span class="tag is-default">?</span>
+                          </span>
+                        </p>
+                      </header>
+                      <div class="card-content">
+                        <figure class="image">
+                          <img src="./Assets/images/hero.png" alt="Hero template screenshot">
+                        </figure>
+                      </div>
+                      <footer class="card-footer">
+                        <a href="templates/hero.html" class="card-footer-item">Preview</a>
+                        <a href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/hero.html" class="card-footer-item">Source
+                          Code</a>
+                      </footer>
+                    </div> -->
+                    <!--kanban -->
+                    <!-- <div class="card">
+                      <header class="card-header">
+                        <p class="card-header-title">
+                          <span>Kanban</span>
+                          <span class="is-pulled-right">
+                            <a href="https://github.com/jgthms/bulma/releases/tag/0.7.2">
+                              <span class="tag is-default">v0.7.2</span>
+                            </a>
+                            <span class="tag is-default">Desktop</span>
+                            <span class="tag is-default">?</span>
+                          </span>
+                        </p>
+                      </header>
+                      <div class="card-content">
+                        <figure class="image">
+                          <img src="./Assets/images/kanban.png" alt="Kanban template screenshot">
+                        </figure>
+                      </div>
+                      <footer class="card-footer">
+                        <a href="templates/kanban.html" class="card-footer-item">Preview</a>
+                        <a href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/kanban.html" class="card-footer-item">Source
+                          Code</a>
+                      </footer>
+                    </div> -->
+                    <!-- login -->
+                    <!-- <div class="card">
+                      <header class="card-header">
+                        <p class="card-header-title">
+                          <span>Login</span>
+                          <span class="is-pulled-right">
+                            <a href="https://github.com/jgthms/bulma/releases/tag/0.7.2">
+                              <span class="tag is-default">v0.7.2</span>
+                            </a>
+                            <span class="tag is-default">Desktop</span>
+                            <span class="tag is-default">Mobile</span>
+                          </span>
+                        </p>
+                      </header>
+                      <div class="card-content">
+                        <figure class="image">
+                          <img src="./Assets/images/login.png" alt="Login template screenshot">
+                        </figure>
+                      </div>
+                      <footer class="card-footer">
+                        <a href="templates/login.html" class="card-footer-item">Preview</a>
+                        <a href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/login.html" class="card-footer-item">Source
+                          Code</a>
+                      </footer>
+                    </div> -->
+                  </div>
+                  <div class="column is-4">
+                    <!-- Quick Movie Lookup -->
+                    <div class="card">
+                      <header class="card-header">
+                        <p class="card-header-title">
+                          <span>Quick Movie Lookup</span>
+                          <span class="is-pulled-right">
+                            <a href="https://github.com/IIMacGyverII/QuickMovieLookup">
+                              <span class="tag is-default">v1.0</span>
+                            </a>
+                            <span class="tag is-default">Desktop</span>
+                            <span class="tag is-default">Mobile</span>
+                          </span>
+                        </p>
+                      </header>
+                      <div class="card-content">
+                        <figure class="image">
+                          <img src="./Assets/img/ss_quickmovielookup.png" alt="Quick Movie Lookup">
+                        </figure>
+                      </div>
+                      <footer class="card-footer">
+                        <a href="https://iimacgyverii.github.io/QuickMovieLookup/" class="card-footer-item">Preview</a>
+                        <a href="https://github.com/IIMacGyverII/QuickMovieLookup" class="card-footer-item">Source
+                          Code</a>
+                      </footer>
+                    </div>
+                    <!-- E-Commerce-Back-End -->
+                    <div class="card">
+                      <header class="card-header">
+                        <p class="card-header-title">
+                          <span>E-Commerce-Back-End</span>
+                          <span class="is-pulled-right">
+                            <a href="https://github.com/IIMacGyverII/E-Commerce-Back-End">
+                              <span class="tag is-default">v0.7.2</span>
+                            </a>
+                            <span class="tag is-default">Desktop</span>
+                            <span class="tag is-default">Mobile</span>
+                          </span>
+                        </p>
+                      </header>
+                      <div class="card-content">
+                        <figure class="image">
+                          <img src="https://img.youtube.com/vi/IGy6A6ut_xQ/0.jpg" alt="E-Commerce-Back-End Screenshot">
+                        </figure>
+                      </div>
+                      <footer class="card-footer">
+                        <a href="https://www.youtube.com/watch?v=IGy6A6ut_xQ" class="card-footer-item">Preview</a>
+                        <a href="https://github.com/IIMacGyverII/E-Commerce-Back-End" class="card-footer-item">Source
+                          Code</a>
+                      </footer>
+                    </div>
+                    <!--inbox -->
+                    <!-- <div class="card">
+                      <header class="card-header">
+                        <p class="card-header-title">
+                          <span>Inbox</span>
+                          <span class="is-pulled-right">
+                            <a href="https://github.com/jgthms/bulma/releases/tag/0.7.2">
+                              <span class="tag is-default">v0.7.2</span>
+                            </a>
+                            <span class="tag is-default">Desktop</span>
+                            <span class="tag is-default">Mobile</span>
+                          </span>
+                        </p>
+                      </header>
+                      <div class="card-content">
+                        <figure class="image">
+                          <img src="./Assets/images/inbox.png" alt="Inbox template screenshot">
+                        </figure>
+                      </div>
+                      <footer class="card-footer">
+                        <a href="templates/inbox.html" class="card-footer-item">Preview</a>
+                        <a href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/inbox.html" class="card-footer-item">Source
+                          Code</a>
+                      </footer>
+                    </div> -->
+                    <!--kanban with functional search-->
+                    <!-- <div class="card">
+                      <header class="card-header">
+                        <p class="card-header-title">
+                          <span>Kanban with Search box</span>
+                          <span class="is-pulled-right">
+                            <a href="https://github.com/jgthms/bulma/releases/tag/0.7.2">
+                              <span class="tag is-default">v0.7.2</span>
+                            </a>
+                            <span class="tag is-default">Desktop</span>
+                            <span class="tag is-default">?</span>
+                          </span>
+                        </p>
+                      </header>
+                      <div class="card-content">
+                        <figure class="image">
+                          <img src="./Assets/images/kanban2.png" alt="Kanban template screenshot">
+                        </figure>
+                      </div>
+                      <footer class="card-footer">
+                        <a href="templates/kanban[search].html" class="card-footer-item">Preview</a>
+                        <a href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/kanban[search].html" class="card-footer-item">Source
+                          Code</a>
+                      </footer>
+                    </div> -->
+                    <!--tabs-->
+                    <!-- <div class="card">
+                      <header class="card-header">
+                        <p class="card-header-title">
+                          <span>Modal Cards</span>
+                          <span class="is-pulled-right">
+                            <a href="https://github.com/jgthms/bulma/releases/tag/0.7.2">
+                              <span class="tag is-default">v0.7.2</span>
+                            </a>
+                            <span class="tag is-default">Desktop</span>
+                            <span class="tag is-default">?</span>
+                          </span>
+                        </p>
+                      </header>
+                      <div class="card-content">
+                        <figure class="image">
+                          <img src="https://dummyimage.com/555x255/000/fff" alt="modal-cards template screenshot">
+                        </figure>
+                      </div>
+                      <footer class="card-footer">
+                        <a href="templates/modal-cards.html" class="card-footer-item">Preview</a>
+                        <a href="https://github.com/BulmaTemplates/bulma-templates/blob/master/templates/modal-cards.html" class="card-footer-item">Source
+                          Code</a>
+                      </footer>
+                    </div> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        
+          <!-- Achievement Level -->
+          <!-- <section class="section">
+            <nav class="level">
+              <div class="level-item has-text-centered">
+                <div>
+                  <p class="heading">Tweets</p>
+                  <p class="title">3,456</p>
+                </div>
+              </div>
+              <div class="level-item has-text-centered">
+                <div>
+                  <p class="heading">Following</p>
+                  <p class="title">123</p>
+                </div>
+              </div>
+              <div class="level-item has-text-centered">
+                <div>
+                  <p class="heading">Followers</p>
+                  <p class="title">456K</p>
+                </div>
+              </div>
+              <div class="level-item has-text-centered">
+                <div>
+                  <p class="heading">Likes</p>
+                  <p class="title">789</p>
+                </div>
+              </div>
             </nav>
-        </header>     
-        <!-- buy image if kept from https://www.shutterstock.com/image-vector/abstract-technology-concept-bright-blue-web-1012205053 -->
-        <img class="head-img" src="./Assets/img/banner3.jpg" alt="Cool Tech Banner">    
-        <section id="pageflexbox">
-            <section class="leftcolumn">
-                <div class="leftcolumnflexbox">
-                <h1>About Me</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam veritatis placeat asperiores neque ut unde.</p>
-                <h2>Work</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem, unde?</p>
+          </section> -->
+        
+        
+          <!-- Contact -->
+          <section class="section" id="contact">
+            <div class="container">
+              <div class="section-heading">
+                <h3 class="title is-2">Contact</h3>
+                <h4 class="subtitle is-5">Get in touch</h4>
+              </div>
+              <br>
+        
+              <div class="columns">
+                <div class="column is-6 is-offset-3">
+                  <div class="box">
+                    <div class="field">
+                      <label class="label">Name</label>
+                      <div class="control">
+                        <input class="input" type="text" placeholder="Text input">
+                      </div>
+                    </div>
+        
+                    <div class="field">
+                      <label class="label">Email</label>
+                      <div class="control has-icons-left">
+                        <input class="input" type="email" placeholder="Email input" value="">
+                        <span class="icon is-small is-left">
+                          <i class="fas fa-envelope"></i>
+                        </span>
+                      </div>
+                    </div>
+        
+                    <div class="field">
+                      <label class="label">Message</label>
+                      <div class="control">
+                        <textarea class="textarea" placeholder="Textarea"></textarea>
+                      </div>
+                    </div>
+        
+                    <div class="field is-grouped has-text-centered">
+                      <div class="control">
+                        <button class="button is-link is-large"><span class="icon">
+                            <i class="fas fa-envelope"></i>
+                          </span>
+                          <span>Submit</span></button>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="leftcolumnflexbox">
-                    <h3>Contact Me</h3>
-                </div>
-            </section>  
-            <section class="rightcolumn">
-                <!-- About me context  -->
-                <div class="rightcolumnflexbox">
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex quae dolor similique quo, iusto repellendus eius soluta delectus suscipit commodi in veritatis, voluptas rem necessitatibus molestiae voluptates nisi natus assumenda voluptate eveniet. Eveniet quidem earum dolorem similique architecto quibusdam sit aspernatur dolore assumenda laudantium neque, ratione inventore facilis magni delectus saepe veritatis ad aliquid eligendi molestiae. Eveniet voluptatem corrupti rerum neque! Atque officiis modi impedit quaerat autem nulla aperiam aspernatur consectetur iste accusamus perspiciatis nobis ullam minus molestias animi molestiae reiciendis, eligendi dicta quia ipsum esse voluptas culpa maxime! Voluptate similique dolore laudantium saepe exercitationem deserunt fugiat esse amet perferendis sed non recusandae fuga corporis error commodi modi quas sit autem, minima nesciunt repellendus eveniet sapiente. Ipsum sunt voluptatem quasi facere maxime molestiae repellendus. Rerum minima ullam impedit obcaecati quas distinctio repellendus porro enim, suscipit amet asperiores ad nesciunt nisi itaque beatae temporibus vel eligendi voluptas. Exercitationem fugit ipsa sunt.</p>
-                </div>
-                <div class="rightworkcontent">
-                    <img class="rightworkcontent" src="./Assets/img/surf.jpg" alt="Surf report">
-                    <img id="rightworkcontent2" src="./Assets/img/led.jpg" alt="LED">
-                    <img id="rightworkcontent2" src="./Assets/img/calculator.jpg" alt="Calculator">
-                    <img id="rightworkcontent2" src="./Assets/img/pastel.jpg" alt="Pastels">
-                    <img id="rightworkcontent2" src="./Assets/img/runbuddy.jpg" alt="Runbuddy">
-                </div>
-                <div id="contact">
-                    <!-- Contact Info context -->
-                    <p>Loremipsum@lorem.com</p><p>Lorem ipsum dolor sit amet.</p>
-                        <p>(123) 456-7890</p>
-                </div>
+              </div>        
             </section>
-    
-        </section>
-    </body>    
+          <!-- <div
+            class="columns is-multiline"
+            data-aos="fade-in"
+            data-aos-easing="linear"
+          >
+            <div class="column is-12">
+              <h1 class="title has-text-centered section-title">My Work</h1>
+            </div>
+            <div class="column is-3">
+              <a href="#">
+                <figure
+                  class="image is-2by1 work-item"
+                  style="background-image: url('https://picsum.photos/320/180?image=0');"
+                ></figure>
+              </a>
+            </div>
+            <div class="column is-3">
+              <a href="#">
+                <figure
+                  class="image is-2by1 work-item"
+                  style="background-image: url('https://picsum.photos/320/180?image=10');"
+                ></figure>
+              </a>
+            </div>
+            <div class="column is-3">
+              <a href="#">
+                <figure
+                  class="image is-2by1 work-item"
+                  style="background-image: url('https://picsum.photos/320/180?image=20');"
+                ></figure>
+              </a>
+            </div>
+            <div class="column is-3">
+              <a href="#">
+                <figure
+                  class="image is-2by1 work-item"
+                  style="background-image: url('https://picsum.photos/320/180?image=30');"
+                ></figure>
+              </a>
+            </div>
+            <div class="column is-3">
+              <a href="#">
+                <figure
+                  class="image is-2by1 work-item"
+                  style="background-image: url('https://picsum.photos/320/180?image=40');"
+                ></figure>
+              </a>
+            </div>
+            <div class="column is-3">
+              <a href="#">
+                <figure
+                  class="image is-2by1 work-item"
+                  style="background-image: url('https://picsum.photos/320/180?image=50');"
+                ></figure>
+              </a>
+            </div>
+            <div class="column is-3">
+              <a href="#">
+                <figure
+                  class="image is-2by1 work-item"
+                  style="background-image: url('https://picsum.photos/320/180?image=60');"
+                ></figure>
+              </a>
+            </div>
+            <div class="column is-3">
+              <a href="#">
+                <figure
+                  class="image is-2by1 work-item"
+                  style="background-image: url('https://picsum.photos/320/180?image=70');"
+                ></figure>
+              </a>
+            </div>
+          </div> -->
+        </div>
+      </div>
+      <!-- End Work Content -->
+      <!-- Begin Contact Content -->
+      
+      <!-- End Contact Content -->
+    </div>
+    <!-- End Main Content -->
+
+    <!-- Begin Footer -->
+    <div class="footer">
+      <p>
+        <strong class="white">Bulma Template</strong> by <a href="http://jgthms.com">Jeremy Thomas</a>.
+        The source code is licensed
+        <a href="http://opensource.org/licenses/mit-license.php">MIT</a>. The website content is licensed
+        <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY NC SA 4.0</a>.
+      </p>
+    </div>
+    <!-- End Footer -->
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./Assets/js/showcase.js"></script>
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script async type="text/javascript" src="./Assets/js/bulma.js"></script>
+    <script>
+      AOS.init({
+        easing: "ease-out",
+        duration: 800,
+      });
+    </script>
+  </body>
 </html>
